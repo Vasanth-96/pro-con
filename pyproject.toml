@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "pro-con"
+version = "0.1.0"
+description = ""
+authors = ["Vasanth-96 <12rvnaik@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.11.2"
+flake8 = "^7.1.1"
+black = "^24.8.0"
+pre-commit = "^3.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+python_version = "3.8"
+ignore_missing_imports = true
+strict = true
+
+[tool.black]
+line-length = 88
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = ["E203", "W503"]
